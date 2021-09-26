@@ -1,3 +1,8 @@
+.navbar-brand {
+  color: #d95d39 !important;
+  font-weight: bold;
+}
+
 .filter {
   display: flex;
   margin: 50px 0px;
@@ -35,6 +40,10 @@
   &__btn {
     width: 100%;
     height: 45px;
+    border: none !important;
+    border-radius: 8px !important;
+    background-color: #d95d39 !important;
+    color: white !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;

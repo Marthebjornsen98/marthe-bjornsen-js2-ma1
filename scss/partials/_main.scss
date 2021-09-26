@@ -1,0 +1,20 @@
+.filter {
+  display: flex;
+  margin: 50px 0px;
+}
+
+.search {
+  width: 400px;
+  height: 45px;
+  border-radius: 10px;
+  border: solid 2px lightgray;
+  @include boxshadow(rgba(0, 0, 0, 0.1));
+}
+
+::placeholder {
+  padding-left: 20px;
+}
+
+.card__img {
+  width: 50%;
+}

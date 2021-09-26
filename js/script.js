@@ -6,6 +6,7 @@ console.log("data", data);
 
 const search = document.querySelector(".search");
 const searchResult = document.querySelector(".search__result");
+const loading = document.querySelector(".loading");
 
 search.onkeyup = function () {
   searchResult.innerHTML = "";
@@ -17,6 +18,7 @@ search.onkeyup = function () {
   }
 
   filteredBy.forEach((elm) => {
+    loading.innerHTML = "";
     searchResult.innerHTML += `
         <div class="col-sm-3">
             <img src="${elm.image}" class="card-img-top" alt="">

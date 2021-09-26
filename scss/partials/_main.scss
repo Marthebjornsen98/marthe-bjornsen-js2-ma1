@@ -7,24 +7,29 @@
   width: 400px;
   height: 45px;
   border-radius: 10px;
+  padding-left: 20px;
   border: solid 2px lightgray;
   @include boxshadow(rgba(0, 0, 0, 0.1));
 }
 
-::placeholder {
-  padding-left: 20px;
-}
-
 .card {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
   border: none !important;
   border-radius: 10px !important;
   @include boxshadow(rgba(0, 0, 0, 0.1));
 
   &__img {
     width: 60%;
+    margin-top: 20px;
     border-radius: 10px !important;
+  }
+
+  &__price {
+    font-size: 1.125rem;
+    color: darkgreen;
+    font-weight: bold;
   }
 
   &__btn {
